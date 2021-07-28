@@ -1,5 +1,6 @@
 import React from "react";
-import Main from "./components/Main";
+import Form from "./components/Form";
+import Todolist from "./components/Todolist";
 
 export default function App() {
   return (
@@ -7,7 +8,8 @@ export default function App() {
       <header className="header_container">
         <h1>To Do List</h1>
       </header>
-      <Main />
+      <Form />
+      <Todolist />
     </>
   );
 }
