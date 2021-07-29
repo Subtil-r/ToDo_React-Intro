@@ -2,7 +2,11 @@ import React, { useRef } from 'react'
 
 const Form = (props) => {
   const inputRef = useRef()
-  const inputElement = inputRef.current.value;
+
+  function inputValue(){
+    const inputElement = inputRef.current;
+    return inputElement.value;
+  }
   
   
   
@@ -10,7 +14,7 @@ const Form = (props) => {
     <div>
       <input ref={inputRef} type="text" placeholder="Write a new todo" />
       <br />
-      <button onClick={()=>props.clickHandler({inputElement})}>Add todo</button>
+      <button onClick={()=>props.clickHandler(inputValue())}>Add todo</button>
     </div>
   )
 }
