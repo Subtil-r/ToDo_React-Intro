@@ -7,7 +7,7 @@ function Todolist(props) {
     <ul>
       {props.todos.map((todo) => (
         <li>
-          <input key={todo} type="checkbox" defaultChecked="" /> {todo}
+          <input key={todo} type="checkbox" checked="n" /> {todo}
         </li>
       ))}
     </ul>
