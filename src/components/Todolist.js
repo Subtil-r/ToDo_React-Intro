@@ -1,16 +1,13 @@
 import React from 'react';
-//import TodoItem from './TodoItem';
+import TodoItem from './TodoItem';
 
-function Todolist(props) {
-  
+function Todolist({todos, toggleTodo}) {
   return (
-    <ul>
-      {props.todos.map((todo) => (
-        <li>
-          <input key={todo} type="checkbox" checked="n" /> {todo}
-        </li>
+   <>
+      {todos.map((todo) => (
+       <TodoItem toggleTodo={toggleTodo} todo={todo} />  
       ))}
-    </ul>
+   </> 
   );
 }
 

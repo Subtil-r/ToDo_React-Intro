@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-const Form = (props) => {
+const Form = ({addTodo, deleteTodo}) => {
   const inputRef = useRef()
 
   function clickHandler(){
@@ -11,13 +11,13 @@ const Form = (props) => {
   function cleanInput(){
     inputRef.current.value = '';
   }
-  
-  
+    
   return (
     <div>
       <input ref={inputRef} type="text" placeholder="Write a new todo" />
       <br />
-      <button onClick={()=>{props.addTodo(clickHandler()); cleanInput()} } >Add todo</button>
+      <button onClick={()=>{addTodo(clickHandler()); cleanInput()} } >Add todo</button>
+      <button onClick={deleteTodo}>X</button>
     </div>
   )
 }
