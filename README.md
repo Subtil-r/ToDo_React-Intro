@@ -1,4 +1,4 @@
-# <img src="https://cdn-icons-png.flaticon.com/512/686/686589.png" width="35">&nbsp; ToDo React Intro
+# <img src="https://cdn-icons-png.flaticon.com/512/3597/3597185.png" width="35">&nbsp; ToDo React Intro
 
 A small application to get started on react basic concepts and hooks.
 ___
